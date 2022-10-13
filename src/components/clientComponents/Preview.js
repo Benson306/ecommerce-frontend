@@ -27,10 +27,13 @@ const Preview = () => {
             signal: abortCont.signal
         })
         .then((res)=>{
-            if(res.ok){
+            return res.json();
+        })
+        .then((res)=>{
+            if(res === 'success'){
                 setLoggedIn(true);
                 setLoading(false);
-            }else{
+            }else if(res === 'failed'){
                 setLoggedIn(false);
                 setLoading(false);
             }
