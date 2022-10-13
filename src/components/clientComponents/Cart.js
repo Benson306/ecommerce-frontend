@@ -105,7 +105,7 @@ const Cart = () => {
             fetch(`${process.env.REACT_APP_API_URL}/remove_cart/`+id,{
                 withCredentials:true,
                 proxy: true,
-                credentials: true,
+                credentials: 'include',
                 method: 'DELETE',
                 headers: {'Content-Type':'application/json'}
             })
