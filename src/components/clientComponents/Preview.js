@@ -1,7 +1,7 @@
 import {useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { Store } from 'react-notifications-component';
-import { MinimalSpinner,Dots, TrinitySpinner } from 'loading-animations-react';
+import { TrinitySpinner } from 'loading-animations-react';
 
 
 import { Link } from 'react-router-dom';
@@ -166,17 +166,17 @@ const Preview = () => {
                             </button>
                             
                             <ul className="slides-container" id="slides-container">
-                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview1}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
-                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview2}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
-                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview3}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
-                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview4}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
+                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/images/${product.preview1}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
+                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/images/${product.preview2}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
+                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/images/${product.preview3}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
+                                <li className="slide"><img src={`${process.env.REACT_APP_API_URL}/images/${product.preview4}`} width="100%" height="100%" style={{objectFit:'scale-down'}} alt="" /></li>
                             </ul>
                         </section>
                             <div className="moreImages">
-                                <img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview1}`} width='50px' height='50px' alt="" />
-                                <img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview2}`} width='50px' height='50px' alt="" />
-                                <img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview3}`} width='50px' height='50px' alt="" />
-                                <img src={`${process.env.REACT_APP_API_URL}/uploads/${product.preview4}`} width='50px' height='50px' alt="" />
+                                <img src={`${process.env.REACT_APP_API_URL}/images/${product.preview1}`} width='50px' height='50px' alt="" />
+                                <img src={`${process.env.REACT_APP_API_URL}/images/${product.preview2}`} width='50px' height='50px' alt="" />
+                                <img src={`${process.env.REACT_APP_API_URL}/images/${product.preview3}`} width='50px' height='50px' alt="" />
+                                <img src={`${process.env.REACT_APP_API_URL}/images/${product.preview4}`} width='50px' height='50px' alt="" />
                             </div>
                         </div>
                         <div className="topDetails">
