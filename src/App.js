@@ -370,7 +370,7 @@ import ProductsByCategory from './components/clientComponents/ProductsByCategory
                       }
                 
             </Route>
-            <Route exact path='/admin'>
+            <Route path='/admin'>
                 <AdminLogin />
             </Route>
 
