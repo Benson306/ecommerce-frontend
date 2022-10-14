@@ -253,9 +253,7 @@ import ProductsByCategory from './components/clientComponents/ProductsByCategory
             <Route path='/account/orders'>
             <div className="home">
                   <LoggedNav />
-                    <br />
-                    <br />
-                    <br />
+                  <br />
                     <div className="profile">
                       <div className="left">
                           <ProfileSidebar />
