@@ -8,7 +8,6 @@ import Personal from "./Personal";
 const CompleteSummary = () => {
     const location = useLocation();
     const data = location.state;
-    const history = useHistory();
 
 
     const [products, setProducts] = useState([]);
@@ -96,18 +95,11 @@ const CompleteSummary = () => {
                     <div className="btns">
                         <div className="recart">
                             <Link to={'/account/orders'}><button style={{backgroundColor:'green', color:'white', border:'none'}}>Go Back</button></Link>
-                        </div>
-                            
+                        </div>                            
                     </div>
-                    
                    <br />
-
-
             </div>
 
-        </div>
-        <div className="panel2">
-            <Delivery />
         </div>
         
         
