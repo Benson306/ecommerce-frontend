@@ -128,7 +128,7 @@ const Summary = () => {
         })
         .then(res =>{   
             if(res === 'success'){
-                localStorage.setItem('state', null);
+                localStorage.removeItem('state')
                 notify("Information","Cart has been cleared. Your order Has Been Saved under your Orders on your profile","info");
             }         
             
