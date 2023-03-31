@@ -8,8 +8,6 @@ export const initialState = storedState ? JSON.parse(storedState) :{
 }
 
 
-
-
 const Reducer = (state, action) =>{
     const { type , payload } = action;
     
